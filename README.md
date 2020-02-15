@@ -1,1 +1,1 @@
-### (Singolo)[https://aksige.github.io/singolo]
+### [Singolo](https://aksige.github.io/singolo)
