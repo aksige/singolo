@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 300;
     src: local("Lato Light"), local("Lato-Light"),
-        url("../fonts/lato-v16-latin-300.woff2") format("woff2"),
-        url("../fonts/lato-v16-latin-300.woff") format("woff");
+        url("./assets/fonts/lato-v16-latin-300.woff2") format("woff2"),
+        url("./assets/fonts/lato-v16-latin-300.woff") format("woff");
 }
 
 @font-face {
@@ -101,7 +101,7 @@ body {
 
 .portfolio-nav {
     display: flex;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 }
 
 .portfolio-nav .portfolio-nav-link + .portfolio-nav-link {
@@ -109,20 +109,27 @@ body {
 }
 
 .portfolio-nav-link {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 300;
     border: 1px solid #666d89;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #666d89;
     text-decoration: none;
-    padding: 2px 6px;
+    padding: 2px 8.8px;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+.portfolio-nav-link:hover {
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 .portfolio-picture {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 21px 20px;
-    padding-bottom: 66px;
+    grid-gap: 20px 20px;
+    padding-bottom: 68px;
 }
 
 .about {
@@ -170,10 +177,19 @@ body {
     font-size: 12px;
     text-align: justify;
     line-height: 19px;
+    margin-bottom: 26px;
 }
 
 .person-social {
+    display: inline-block;
+    margin-bottom: 64px;
 }
 
 .social {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.social:hover {
+    border-bottom: 5px dotted #323746;
 }
