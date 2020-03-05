@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Lato Light"), local("Lato-Light"),
+        url("./assets/fonts/lato-v16-latin-300.woff2") format("woff2"),
+        url("./assets/fonts/lato-v16-latin-300.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lato Regular"), local("Lato-Regular"),
+        url("./assets/fonts/lato-v16-latin-regular.woff2") format("woff2"),
+        url("./assets/fonts/lato-v16-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lato Bold"), local("Lato-Bold"),
+        url("./assets/fonts/lato-v16-latin-700.woff2") format("woff2"),
+        url("./assets/fonts/lato-v16-latin-700.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Lato Black"), local("Lato-Black"),
+        url("./assets/fonts/lato-v16-latin-900.woff2") format("woff2"),
+        url("./assets/fonts/lato-v16-latin-900.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+ol,
+ul,
+li,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666d89;
+}
+
+.wrapper-outer {
+    max-width: 1020px;
+    margin: 0 auto;
+}
