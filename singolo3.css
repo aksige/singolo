@@ -76,3 +76,47 @@ body {
     max-width: 1020px;
     margin: 0 auto;
 }
+
+.information {
+    background: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+.wrapper-inner {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.enter-name {
+}
+
+.information-title {
+}
+
+.information-description {
+}
+.content {
+    display: inline-flex;
+}
+.information-form {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+}
+.information-form > input {
+    border: none;
+    border-radius: 10px;
+    background: #d6564f;
+}
+
+.enter-name {
+}
+
+.enter-email {
+}
+
+.enter-subject {
+}
+
+.enter-describe {
+}
