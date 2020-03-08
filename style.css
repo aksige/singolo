@@ -153,13 +153,13 @@ body {
 }
 
 .iphone {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
 }
 .picture_wrapper .iphone {
     display: inline-block;
 }
 .iphone-vertical {
-    margin: 53px 0 0 112px;
+    margin: 53px 0 0 72px;
 }
 
 .iphone-horizontal {
@@ -197,8 +197,8 @@ svg:hover {
 
 .services-wrapper {
     margin-left: 40px;
-    margin-bottom: 55px;
-    padding-top: 55px;
+    margin-bottom: 58px;
+    padding-top: 56px;
 }
 
 .services-title {
