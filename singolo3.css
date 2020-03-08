@@ -88,9 +88,6 @@ body {
     margin: 0 auto;
 }
 
-.enter-name {
-}
-
 .information-title {
     padding-top: 60px;
     font-size: 30px;
@@ -120,6 +117,14 @@ body {
     flex-direction: column;
     border: none;
     margin-right: 20px;
+}
+
+input::placeholder {
+    color: #f08586;
+}
+
+textarea::placeholder {
+    color: #f08586;
 }
 
 .information-form > input {
@@ -204,4 +209,41 @@ body {
     content: url(./assets/images/mail.png);
     position: absolute;
     left: 0;
+}
+
+.footer {
+    background: #2d303a;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.copyright::before {
+    content: "\00a9";
+}
+
+.footer-items {
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-item {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.footer-item:hover {
+    background: #f06c64;
+    border-radius: 50%;
 }
