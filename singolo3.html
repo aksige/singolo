@@ -20,18 +20,20 @@
                     nibh.
                 </p>
                 <div class="content">
-                    <div class="information-form">
+                    <form class="information-form">
                         <input
                             class="enter-name"
                             type="text"
                             name="name"
                             placeholder="Name (Required)"
+                            required
                         />
                         <input
                             class="enter-email"
                             type="email"
                             name="login"
                             placeholder="Email (Required)"
+                            required
                         />
                         <input
                             class="enter-subject"
@@ -39,13 +41,14 @@
                             name="subject"
                             placeholder="Subject"
                         />
-                        <input
+                        <textarea
                             class="enter-describe"
-                            type="text"
                             name="describe"
+                            id=""
                             placeholder="Describe your project in detail..."
-                        />
-                    </div>
+                        ></textarea>
+                        <button class="btn" type="submit">Submit</button>
+                    </form>
                     <div class="information-block">
                         <h4 class="block-title">
                             Contact Information
@@ -57,6 +60,27 @@
                             luctus faucibus. Morbi at aliquet turpis, et
                             consequat felis.
                         </p>
+                        <ul class="block-list">
+                            <li>
+                                <a href="" class="list-item-1"
+                                    >Elm St. 14/05 Lost City</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="tel:03528 331 86 35"
+                                    class="list-item-2"
+                                    >03528 331 86 35
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="mailto:info@singolo.com"
+                                    class="list-item-3"
+                                    >info@singolo.com</a
+                                >
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

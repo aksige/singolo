@@ -43,6 +43,7 @@ body,
 div,
 span,
 h1,
+p,
 h2,
 h3,
 h4,
@@ -91,32 +92,116 @@ body {
 }
 
 .information-title {
+    padding-top: 60px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: justify;
+    letter-spacing: -0.2px;
+    margin-bottom: 18px;
+    color: #f0d8d9;
 }
 
 .information-description {
+    text-align: justify;
+    line-height: 29px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 43px;
+    color: #f0d8d9;
 }
+
 .content {
     display: inline-flex;
+    margin-bottom: 28px;
 }
+
 .information-form {
     display: flex;
     flex-direction: column;
-    width: 620px;
-}
-.information-form > input {
     border: none;
-    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.information-form > input {
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    border-radius: 7px;
     background: #d6564f;
-}
-
-.enter-name {
-}
-
-.enter-email {
-}
-
-.enter-subject {
+    padding: 13px 16px;
 }
 
 .enter-describe {
+    width: 620px;
+    height: 201px;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 13px 16px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    background: #d6564f;
+    resize: none;
+    margin-top: 15px;
+}
+
+.information-form input + input {
+    margin-top: 15px;
+}
+
+.btn {
+    margin-top: 10px;
+    width: 80px;
+    height: 31px;
+    border-radius: 5px;
+}
+
+.block-title {
+    font-size: 18px;
+    font-weight: 900;
+    color: #f0d8d9;
+}
+
+.block-description {
+    margin: 9px auto;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    width: 299px;
+    text-align: justify;
+    color: #f0d8d9;
+}
+
+.block-list {
+    margin-top: 22px;
+    list-style: none;
+}
+
+.block-list a {
+    text-decoration: none;
+    position: relative;
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 23px;
+    line-height: 23px;
+    color: #f0d8d9;
+}
+
+.list-item-1::before {
+    content: url(./assets/images/location.png);
+    position: absolute;
+    left: 3px;
+}
+
+.list-item-2::before {
+    content: url(./assets/images/phone.png);
+    position: absolute;
+    left: 0;
+}
+
+.list-item-3::before {
+    content: url(./assets/images/mail.png);
+    position: absolute;
+    left: 0;
 }
