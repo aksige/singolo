@@ -153,7 +153,7 @@ body {
 }
 
 .iphone {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
 }
 .picture_wrapper .iphone {
     display: inline-block;
@@ -198,7 +198,7 @@ svg:hover {
 .services-wrapper {
     margin-left: 40px;
     margin-bottom: 58px;
-    padding-top: 56px;
+    padding-top: 54px;
 }
 
 .services-title {
@@ -326,7 +326,7 @@ svg:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px 20px;
-    margin-bottom: 68px;
+    margin-bottom: 67px;
     max-height: 601px;
     overflow: hidden;
 }
@@ -419,7 +419,7 @@ svg:hover {
 
 .content {
     display: inline-flex;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
 .information-form {
@@ -530,7 +530,7 @@ textarea::placeholder {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 21px;
 }
 
 .copyright {
