@@ -8,7 +8,7 @@
     </head>
     <body>
         <header class="header wrapper-outer">
-            <div class="logo__wrapper">
+            <div id="one" class="logo__wrapper">
                 <a href="#!" class="logo">
                     <div class="logo_name">
                         Singolo<span class="asterisk">&#42;</span>
@@ -18,30 +18,42 @@
             <nav class="navigation">
                 <ul class="navigation_wrapper">
                     <li class="navigation_wrapper_link">
-                        <a class="navigation_wrapper_link-item" href="#!">
+                        <a
+                            class="navigation_wrapper_link-item active"
+                            href="#one"
+                        >
                             HOME
                         </a>
                     </li>
                     <li class="navigation_wrapper_link">
                         <a
-                            class="navigation_wrapper_link-item"
+                            class="navigation_wrapper_link-item js-scroll"
                             href="#services"
                         >
                             SERVICES
                         </a>
                     </li>
                     <li class="navigation_wrapper_link">
-                        <a class="navigation_wrapper_link-item" href="#!">
+                        <a
+                            class="navigation_wrapper_link-item js-scroll"
+                            href="#portfolio"
+                        >
                             PORTFOLIO
                         </a>
                     </li>
                     <li class="navigation_wrapper_link">
-                        <a class="navigation_wrapper_link-item" href="#!">
+                        <a
+                            class="navigation_wrapper_link-item js-scroll"
+                            href="#about"
+                        >
                             ABOUT
                         </a>
                     </li>
                     <li class="navigation_wrapper_link">
-                        <a class="navigation_wrapper_link-item" href="#!">
+                        <a
+                            class="navigation_wrapper_link-item js-scroll"
+                            href="#info"
+                        >
                             CONTACT
                         </a>
                     </li>
@@ -51,22 +63,27 @@
         <main class="wrapper-outer">
             <section class="main picture_wrapper">
                 <div class="wrapper-inner">
-                    <div class="iphone">
-                        <img
-                            class="iphone-vertical"
-                            src="./assets/images/iphone-vertical.png"
-                            alt="iphone_vertical"
-                        />
+                    <div class="picture blogSlides">
+                        <div class="iphone">
+                            <img
+                                class="iphone-vertical"
+                                src="./assets/images/iphone-vertical.png"
+                                alt="iphone_vertical"
+                            />
+                        </div>
+                        <div class="iphone">
+                            <img
+                                class="iphone-horizontal"
+                                src="./assets/images/iphone-horizontal.png"
+                                alt="iphone_horizontal"
+                            />
+                        </div>
                     </div>
-                    <div class="iphone">
-                        <img
-                            class="iphone-horizontal"
-                            src="./assets/images/iphone-horizontal.png"
-                            alt="iphone_horizontal"
-                        />
+                    <div class="picture2 blogSlides">
+                        <img src="./assets/images/slide__2.jpg" alt="" />
                     </div>
                     <div class="arrows-block-right">
-                        <a class="arrows11" href="#!">
+                        <a class="arrows11" onclick="plusSlides(-1)" href="#!">
                             <svg
                                 version="1.1"
                                 id="Layer_2"
@@ -92,7 +109,7 @@
                         </a>
                     </div>
                     <div class="arrows-block-left">
-                        <a href="#!">
+                        <a onclick="plusSlides(1)" href="#!">
                             <svg
                                 version="1.1"
                                 id="Layer_2"
@@ -239,7 +256,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio wrapper-outer">
+            <section id="portfolio" class="portfolio wrapper-outer">
                 <div class="wrapper-inner">
                     <h2 class="portfolio-title">
                         Portfolio
@@ -249,12 +266,16 @@
                         ligula, eget lacinia odio sem nec elit.
                     </p>
                     <div class="portfolio-nav">
-                        <a class="portfolio-nav-link" href="#!">All</a>
-                        <a class="portfolio-nav-link" href="#!">Web Design</a>
-                        <a class="portfolio-nav-link" href="#!"
+                        <a class="portfolio-nav-link" href="#!" id="all">All</a>
+                        <a class="portfolio-nav-link" href="#!" id="web"
+                            >Web Design</a
+                        >
+                        <a class="portfolio-nav-link" href="#!" id="graphic"
                             >Graphic Design</a
                         >
-                        <a class="portfolio-nav-link" href="#!">Artwork</a>
+                        <a class="portfolio-nav-link" href="#!" id="artwork"
+                            >Artwork</a
+                        >
                     </div>
                     <div class="portfolio-picture">
                         <img
@@ -320,7 +341,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about wrapper-outer">
+            <section id="about" class="about wrapper-outer">
                 <div class="wrapper-inner">
                     <h2 class="about-title">
                         About Us
@@ -456,7 +477,7 @@
                     </div>
                 </div>
             </section>
-            <section class="information wrapper-outer">
+            <section id="info" class="information wrapper-outer">
                 <div class="wrapper-inner">
                     <h2 class="information-title">
                         Get a Quote
@@ -576,5 +597,6 @@
                 </ul>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

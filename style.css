@@ -75,6 +75,11 @@ body {
 }
 
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,8 +144,11 @@ body {
     text-transform: uppercase;
 }
 
-.navigation_wrapper_link-item:hover,
-.navigation_wrapper_link-item:active {
+.active {
+    color: #f06c64;
+}
+
+.navigation_wrapper_link-item:hover {
     color: #f06c64;
 }
 
@@ -166,6 +174,9 @@ body {
     margin: 0 0 122px 70px;
 }
 
+.picture2 {
+    margin-left: -40px;
+}
 .arrows-block-right {
     position: absolute;
     top: 281px;
@@ -329,6 +340,14 @@ svg:hover {
     margin-bottom: 67px;
     max-height: 601px;
     overflow: hidden;
+}
+
+.portfolio-picture-item {
+    cursor: pointer;
+}
+
+.border {
+    border: 5px solid #f06c64;
 }
 
 .about {
