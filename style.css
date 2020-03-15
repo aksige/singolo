@@ -540,6 +540,42 @@ textarea::placeholder {
     left: 0;
 }
 
+.modal-window {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 50%;
+    z-index: 7;
+    animation-name: move;
+    animation-duration: 0.4s;
+}
+
+@keyframes move {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 200px;
+        opacity: 1;
+    }
+}
+
+.active-message {
+    display: flex;
+    justify-content: center;
+}
+
+.section-message {
+    max-width: 400px;
+    padding: 20px 20px;
+    background: rgba(21, 24, 22, 0.95);
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px 1px rgba(184, 181, 5, 0.9),
+        1px 1px 1px 1px rgba(184, 181, 5, 0.9);
+}
+
 .footer {
     background: #2d303a;
 }

@@ -130,3 +130,60 @@ for (let i = 0; i < picture.length; i++) {
         } else event.target.classList.add('border');
     });
 }
+
+// form
+
+document.getElementsByClassName('content')[0].addEventListener('submit', function (event) {
+    event.preventDefault();
+    let inputs = document.querySelectorAll('input'),
+        email = inputs[1].value,
+        subject = inputs[2].value,
+        describe = document.querySelector('.enter-describe').value,
+        modalWindow = document.querySelector('.modal-window'),
+        messageContainer = modalWindow.firstElementChild;
+
+    while (messageContainer.firstElementChild) messageContainer.removeChild(messageContainer.firstElementChild);
+
+    let messageFirstLine = document.createElement('div');
+    let paragraph = document.createElement('p');
+    paragraph.innerText = 'Письмо отправлено';
+    messageFirstLine.append(paragraph);
+    messageContainer.append(messageFirstLine);
+
+    let messagesecondLine = document.createElement('div');
+    paragraph = document.createElement('p');
+    if (subject.length != 0) {
+        paragraph.innerText = 'Тема: ' + subject;
+    } else {
+        paragraph.innerText = 'Без темы';
+    }
+    messagesecondLine.append(paragraph);
+    messageContainer.append(messagesecondLine);
+
+    let messageThirdLine = document.createElement('div');
+    paragraph = document.createElement('p');
+    paragraph.style.overflow = 'hidden';
+    paragraph.style.textOverflow = 'ellipsis';
+    paragraph.style.whiteSpace = 'nowrap';
+    if (describe.length != 0) {
+        paragraph.innerText = 'Описание: ' + describe;
+    } else {
+        paragraph.innerText = 'Без описания';
+    }
+    messageThirdLine.append(paragraph);
+    messageContainer.append(messageThirdLine);
+
+    let button = document.createElement('button');
+    button.innerText = 'Ok';
+    button.style.width = '15%';
+    button.style.maxWidth = '150px';
+    button.style.background = '#ffff00';
+    button.style.borderRadius = '12px';
+    button.addEventListener('click', function (event) {
+        modalWindow.classList.remove('active-message');
+    });
+    messageContainer.append(button);
+
+    modalWindow.classList.add('active-message');
+});
+
