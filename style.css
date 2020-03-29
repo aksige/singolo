@@ -609,3 +609,61 @@ textarea::placeholder {
     background: #f06c64;
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    .wrapper-inner {
+        width: 768px;
+    }
+    img.iphone-vertical,
+    img.iphone-horizontal {
+        margin: 0;
+        width: 50%;
+    }
+    .picture {
+        padding-left: 105px;
+        padding-top: 90px;
+    }
+    .flex-two {
+        display: flex;
+        align-items: center;
+        padding-left: 60px;
+    }
+    .picture2 img {
+        width: 100%;
+    }
+    .arrows-block-left,
+    .arrows-block-right {
+        top: 185px;
+    }
+    .services-description,
+    .about-description,
+    .information-description {
+        width: 687px;
+    }
+    .portfolio-picture {
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 810px;
+        width: 700px;
+    }
+    .scope {
+        padding-left: 30px;
+    }
+    .person-item-face img {
+        width: 70%;
+    }
+    .person-social a img {
+        width: 20%;
+    }
+    .person-description {
+        width: 160px;
+    }
+    .enter-describe {
+        width: 442px;
+    }
+    .block-description {
+        width: 221px;
+    }
+    .footer-item img {
+        width: 70%;
+    }
+}
